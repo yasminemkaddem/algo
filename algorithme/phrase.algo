@@ -1,0 +1,64 @@
+
+ALGORITHM phrase
+VAR
+    i:INTEGER;
+    nbMots, p :INTEGER;
+    ch : STRING;
+    nbvoy:INTEGER;
+    nbph , ph :INTEGER
+BEGIN
+
+
+    FOR i:= 1 to length(ch)  DO
+    IF  ch[i] in['a','e','i','y','o','u']THEN
+        nbvoy:=nbvoy+1
+        END_IF
+    END_FOR    
+
+nbph == 1
+    ph == 0
+    WHILE  ph < len(ch) DO
+       while ch[ph] == ".":
+            nbMots = 0
+            if ch[ph] != ".":
+                nbph = 1
+        ph = ph + 1
+    i = ph
+    while i < len(ch):
+        if ph[i] == " .":
+            nbph = nbph + 1
+        i = i + 1
+    return nbph
+    END_WHILE
+   
+
+   nbMots == 1
+    p == 0
+    WHILE  p < len(ch) DO
+       while ch[p] == "":
+            nbMots = 0
+            if ch[p] != "":
+                nbMots = 1
+        p = p + 1
+    i = p
+    while i < len(ch):
+        if ph[i] == " ":
+            nbMots = nbMots + 1
+        i = i + 1
+    return nbMots
+    END_WHILE
+   
+    
+     
+      
+    end;
+
+
+
+
+
+
+END
+
+
+
